@@ -1,0 +1,108 @@
+
+html {
+  height: 100%;
+}
+body {
+  background: url('./img/bg.jpg') no-repeat;
+  background-size: cover;
+}
+.container {
+  background: none;
+  border-radius: 0; 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  width: 100%;
+}
+.button {
+  background: #0492bd;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 5px #035c77;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 80px 0 50px;
+  padding: 10px 20px;
+}
+.button--red {
+  background: #b53737;
+  box-shadow: 0 5px #811d1d;
+}
+.name {
+  position: absolute;
+  color: white;
+  top: 0px;
+  left: 20px;
+}
+.logo {
+  background: url('./img/logo.png') no-repeat;
+  background-size: 100%;
+  height: 80px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+  width: 250px;
+}
+.ideasList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  list-style-type: none;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0;
+  padding: 0 0 0 1%;
+  width: 100%;
+}
+.idea {
+  background: #efefef;
+  box-shadow: 0 0 4px rgba(0,0,0,.4);
+  margin: 20px 6%;
+  padding: 0 10px;
+  position: relative;
+}
+@media screen and (max-width:1240px){
+  .idea {
+    margin: 20px;
+    width: 100%;
+  }
+  .name {
+    display: none;
+  }
+}
+input[type=text].idea__title {
+  background: none;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 0;
+  font-size: 1.5rem;
+}
+.idea__text {
+  border: none;
+  border-radius: 0;
+  font-size: 0.8rem;
+  height: 70px;
+  resize: none;
+}
+.idea__counter {
+  bottom: 4px;
+  color: #999;
+  font-size: 0.5rem;
+  position: absolute;
+  right: 10px;
+}
+.idea__counter--alert {
+  color: red;
+}
+.idea__time {
+  bottom: 3px;
+  color: #999;
+  font-size: 0.5rem;
+  left: 10px;
+  position: absolute;
+}
+
+
